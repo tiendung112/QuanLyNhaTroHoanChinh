@@ -24,19 +24,19 @@ namespace QuanLyNhaTro
         }
         private void Home_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanLyNhaTroDataSet.KhachThue' table. You can move, or remove it, as needed.
-            this.khachThueTableAdapter.Fill(this.quanLyNhaTroDataSet.KhachThue);
-            // TODO: This line of code loads data into the 'hoaDon._HoaDon' table. You can move, or remove it, as needed.
-            this.hoaDonTableAdapter2.Fill(this.hoaDon._HoaDon);
-            // TODO: This line of code loads data into the 'quanLyNhaTroDataSet1.HoaDon' table. You can move, or remove it, as needed.
+            //// TODO: This line of code loads data into the 'quanLyNhaTroDataSet.KhachThue' table. You can move, or remove it, as needed.
+            //this.khachThueTableAdapter.Fill(this.quanLyNhaTroDataSet.KhachThue);
+            //// TODO: This line of code loads data into the 'hoaDon._HoaDon' table. You can move, or remove it, as needed.
+           this.hoaDonTableAdapter2.Fill(this.hoaDon._HoaDon);
+            //// TODO: This line of code loads data into the 'quanLyNhaTroDataSet1.HoaDon' table. You can move, or remove it, as needed.
             this.hoaDonTableAdapter1.Fill(this.quanLyNhaTroDataSet1.HoaDon);
-            // TODO: This line of code loads data into the 'quanLyNhaTroDataSet.HoaDon' table. You can move, or remove it, as needed.
+            //// TODO: This line of code loads data into the 'quanLyNhaTroDataSet.HoaDon' table. You can move, or remove it, as needed.
             this.hoaDonTableAdapter.Fill(this.quanLyNhaTroDataSet.HoaDon);
-            // TODO: This line of code loads data into the 'quanLyNhaTroDataSet.HopDong' table. You can move, or remove it, as needed.
-            this.hopDongTableAdapter.Fill(this.quanLyNhaTroDataSet.HopDong);
+            //// TODO: This line of code loads data into the 'quanLyNhaTroDataSet.HopDong' table. You can move, or remove it, as needed.
+            //this.hopDongTableAdapter.Fill(this.quanLyNhaTroDataSet.HopDong);
 
-            // TODO: This line of code loads data into the 'quanLyNhaTroDataSet.Phong' table. You can move, or remove it, as needed.
-            this.phongTableAdapter.Fill(this.quanLyNhaTroDataSet.Phong);
+            //// TODO: This line of code loads data into the 'quanLyNhaTroDataSet.Phong' table. You can move, or remove it, as needed.
+            //this.phongTableAdapter.Fill(this.quanLyNhaTroDataSet.Phong);
             LoadPhong();
             LoadChuNha();
             LoadHopDong();
@@ -57,7 +57,7 @@ namespace QuanLyNhaTro
         }
         private void LoadPhong()
         {
-            string sql = "SELECT * FROM Phong where DaXoa =1";
+            string sql = "SELECT * FROM Phong where DaXoa =1 ";
             dataPhong = BaseFunction.GetDataToTable(sql); //Đọc dữ liệu từ bảng
             dgv_Phong.DataSource = dataPhong; //Nguồn dữ liệu            
             dgv_Phong.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
@@ -71,7 +71,7 @@ namespace QuanLyNhaTro
                 LoadPhong();
             }
 
-            string vitri = cbx_phong.SelectedValue.ToString() != null ? cbx_phong.SelectedValue.ToString() : "1";
+            string vitri = cbx_phong.SelectedValue.ToString() ;
             string sql = $"SELECT * FROM Phong WHERE ViTriPhongID ={vitri} and DaXoa =1";
             dataPhong = BaseFunction.GetDataToTable(sql); //Đọc dữ liệu từ bảng
             dgv_Phong.DataSource = dataPhong; //Nguồn dữ liệu            
@@ -149,16 +149,16 @@ namespace QuanLyNhaTro
         }
         private void btn_HopDongHienThi_Click(object sender, EventArgs e)
         {
-            if (cbx_phong.SelectedIndex == -1)
+            if (cbx_HopDong.SelectedIndex == -1)
             {
                 LoadPhong();
             }
-            string soPhong = cbx_HopDong.SelectedValue.ToString() != null ? cbx_phong.SelectedValue.ToString() : "1";
-            string sql = $"SELECT * FROM HopDong WHERE SoPhong ={soPhong} and DaXoa =1";
-            dataPhong = BaseFunction.GetDataToTable(sql); //Đọc dữ liệu từ bảng
-            dgv_Phong.DataSource = dataPhong; //Nguồn dữ liệu            
-            dgv_Phong.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
-            dgv_Phong.EditMode = DataGridViewEditMode.EditProgrammatically; //Không cho sửa dữ liệu trực tiếp
+            string soPhong = cbx_HopDong.SelectedValue.ToString().Trim() ;
+            string sql = "SELECT * FROM HopDong WHERE SoPhong = "+soPhong + " and DaXoa =1";
+            dataHopDong = BaseFunction.GetDataToTable(sql); //Đọc dữ liệu từ bảng
+            dgv_HopDong.DataSource = dataHopDong; //Nguồn dữ liệu            
+            dgv_HopDong.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
+            dgv_HopDong.EditMode = DataGridViewEditMode.EditProgrammatically; //Không cho sửa dữ liệu trực tiếp
         }
 
         private void dgv_HopDong_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -194,7 +194,6 @@ namespace QuanLyNhaTro
             dgv_Phong.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
             dgv_Phong.EditMode = DataGridViewEditMode.EditProgrammatically; //Không cho sửa dữ liệu trực tiếp
         }
-        
 
         private void btn_timHoaDon_Click(object sender, EventArgs e)
         {
@@ -275,6 +274,11 @@ namespace QuanLyNhaTro
         {
             ThongTinBanThan thongTin = new ThongTinBanThan(_TenDangNhap);
             thongTin.Show();
+        }
+
+        private void cbx_HopDong_Click_1(object sender, EventArgs e)
+        {
+            BaseFunction.FillCombo("SELECT SoPhong FROM HopDong where DaXoa =1", cbx_HopDong, "SoPhong", "SoPhong");
 
         }
     }

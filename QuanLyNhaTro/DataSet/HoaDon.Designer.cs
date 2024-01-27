@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace QuanLyNhaTro {
+namespace QuanLyNhaTro.DataSet {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace QuanLyNhaTro {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("QuanLyNhaTroDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("HoaDon")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class QuanLyNhaTroDataSet1 : global::System.Data.DataSet {
+    public partial class HoaDon : global::System.Data.DataSet {
         
         private HoaDonDataTable tableHoaDon;
         
@@ -30,7 +30,7 @@ namespace QuanLyNhaTro {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public QuanLyNhaTroDataSet1() {
+        public HoaDon() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace QuanLyNhaTro {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected QuanLyNhaTroDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected HoaDon(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -79,7 +79,7 @@ namespace QuanLyNhaTro {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public HoaDonDataTable HoaDon {
+        public HoaDonDataTable _HoaDon {
             get {
                 return this.tableHoaDon;
             }
@@ -127,7 +127,7 @@ namespace QuanLyNhaTro {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            QuanLyNhaTroDataSet1 cln = ((QuanLyNhaTroDataSet1)(base.Clone()));
+            HoaDon cln = ((HoaDon)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace QuanLyNhaTro {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "QuanLyNhaTroDataSet1";
+            this.DataSetName = "HoaDon";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/QuanLyNhaTroDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/HoaDon.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableHoaDon = new HoaDonDataTable();
@@ -210,7 +210,7 @@ namespace QuanLyNhaTro {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeHoaDon() {
+        private bool ShouldSerialize_HoaDon() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace QuanLyNhaTro {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            QuanLyNhaTroDataSet1 ds = new QuanLyNhaTroDataSet1();
+            HoaDon ds = new HoaDon();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -601,6 +601,8 @@ namespace QuanLyNhaTro {
                 this.columnGiaDichVuKhac.AllowDBNull = false;
                 this.columnGhiChu.MaxLength = 2147483647;
                 this.columnTongTien.ReadOnly = true;
+                this.ExtendedProperties.Add("Generator_TablePropName", "_HoaDon");
+                this.ExtendedProperties.Add("Generator_UserTableName", "HoaDon");
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -668,7 +670,7 @@ namespace QuanLyNhaTro {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyNhaTroDataSet1 ds = new QuanLyNhaTroDataSet1();
+                HoaDon ds = new HoaDon();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -982,7 +984,7 @@ namespace QuanLyNhaTro {
         }
     }
 }
-namespace QuanLyNhaTro.QuanLyNhaTroDataSet1TableAdapters {
+namespace QuanLyNhaTro.DataSet.HoaDonTableAdapters {
     
     
     /// <summary>
@@ -1197,7 +1199,7 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyNhaTroDataSet1.HoaDonDataTable dataTable) {
+        public virtual int Fill(HoaDon.HoaDonDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1210,9 +1212,9 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyNhaTroDataSet1.HoaDonDataTable GetData() {
+        public virtual HoaDon.HoaDonDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyNhaTroDataSet1.HoaDonDataTable dataTable = new QuanLyNhaTroDataSet1.HoaDonDataTable();
+            HoaDon.HoaDonDataTable dataTable = new HoaDon.HoaDonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1220,14 +1222,14 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyNhaTroDataSet1.HoaDonDataTable dataTable) {
+        public virtual int Update(HoaDon.HoaDonDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyNhaTroDataSet1 dataSet) {
+        public virtual int Update(HoaDon dataSet) {
             return this.Adapter.Update(dataSet, "HoaDon");
         }
         
@@ -1561,10 +1563,10 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(QuanLyNhaTroDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(HoaDon dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._hoaDonTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HoaDon.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet._HoaDon.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -1580,10 +1582,10 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(QuanLyNhaTroDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(HoaDon dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._hoaDonTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HoaDon.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet._HoaDon.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._hoaDonTableAdapter.Update(addedRows));
@@ -1598,10 +1600,10 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(QuanLyNhaTroDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(HoaDon dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._hoaDonTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HoaDon.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet._HoaDon.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._hoaDonTableAdapter.Update(deletedRows));
@@ -1640,7 +1642,7 @@ SELECT HoaDonID, SoHopDong, SoPhong, NgayLap, ThangLap, NamLap, SoDienCu, SoDien
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(QuanLyNhaTroDataSet1 dataSet) {
+        public virtual int UpdateAll(HoaDon dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -46,119 +46,119 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseFunction.cs" />
-    <Compile Include="DoiMatKhau.cs">
+    <Compile Include="Base\BaseFunction.cs" />
+    <Compile Include="View\DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoiMatKhau.Designer.cs">
+    <Compile Include="View\DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.cs">
+    <Compile Include="DataSet\HoaDon.cs">
       <DependentUpon>HoaDon.xsd</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.Designer.cs">
+    <Compile Include="DataSet\HoaDon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HoaDon.xsd</DependentUpon>
     </Compile>
-    <Compile Include="HoaDonScreen.cs">
+    <Compile Include="View\HoaDonScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoaDonScreen.Designer.cs">
+    <Compile Include="View\HoaDonScreen.Designer.cs">
       <DependentUpon>HoaDonScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="HopDongScreen.cs">
+    <Compile Include="View\HopDongScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HopDongScreen.Designer.cs">
+    <Compile Include="View\HopDongScreen.Designer.cs">
       <DependentUpon>HopDongScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHangScreen.cs">
+    <Compile Include="View\KhachHangScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhachHangScreen.Designer.cs">
+    <Compile Include="View\KhachHangScreen.Designer.cs">
       <DependentUpon>KhachHangScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Mail\EmailTo.cs" />
-    <Compile Include="Home.cs">
+    <Compile Include="View\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="View\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginScreen.cs">
+    <Compile Include="View\LoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginScreen.Designer.cs">
+    <Compile Include="View\LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Mail\SendHoaDon.cs" />
     <Compile Include="Mail\XacNhan.cs" />
-    <Compile Include="NhanVienScreen.cs">
+    <Compile Include="View\NhanVienScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NhanVienScreen.Designer.cs">
+    <Compile Include="View\NhanVienScreen.Designer.cs">
       <DependentUpon>NhanVienScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhongScreen.cs">
+    <Compile Include="View\PhongScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhongScreen.Designer.cs">
+    <Compile Include="View\PhongScreen.Designer.cs">
       <DependentUpon>PhongScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mail\Validate_Mail.cs" />
-    <Compile Include="QuanLyNhaTroDataSet.Designer.cs">
+    <Compile Include="DataSet\QuanLyNhaTroDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyNhaTroDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyNhaTroDataSet1.Designer.cs">
+    <Compile Include="DataSet\QuanLyNhaTroDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyNhaTroDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuenMatKhau.cs">
+    <Compile Include="View\QuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuenMatKhau.Designer.cs">
+    <Compile Include="View\QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinBanThan.cs">
+    <Compile Include="View\ThongTinBanThan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongTinBanThan.Designer.cs">
+    <Compile Include="View\ThongTinBanThan.Designer.cs">
       <DependentUpon>ThongTinBanThan.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinDaXoaScreen.cs">
+    <Compile Include="View\ThongTinDaXoaScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongTinDaXoaScreen.Designer.cs">
+    <Compile Include="View\ThongTinDaXoaScreen.Designer.cs">
       <DependentUpon>ThongTinDaXoaScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DoiMatKhau.resx">
+    <EmbeddedResource Include="View\DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HoaDonScreen.resx">
+    <EmbeddedResource Include="View\HoaDonScreen.resx">
       <DependentUpon>HoaDonScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="View\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HopDongScreen.resx">
+    <EmbeddedResource Include="View\HopDongScreen.resx">
       <DependentUpon>HopDongScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHangScreen.resx">
+    <EmbeddedResource Include="View\KhachHangScreen.resx">
       <DependentUpon>KhachHangScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginScreen.resx">
+    <EmbeddedResource Include="View\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NhanVienScreen.resx">
+    <EmbeddedResource Include="View\NhanVienScreen.resx">
       <DependentUpon>NhanVienScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhongScreen.resx">
+    <EmbeddedResource Include="View\PhongScreen.resx">
       <DependentUpon>PhongScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -170,24 +170,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuenMatKhau.resx">
+    <EmbeddedResource Include="View\QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinBanThan.resx">
+    <EmbeddedResource Include="View\ThongTinBanThan.resx">
       <DependentUpon>ThongTinBanThan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinDaXoaScreen.resx">
+    <EmbeddedResource Include="View\ThongTinDaXoaScreen.resx">
       <DependentUpon>ThongTinDaXoaScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="HoaDon.xsc">
+    <None Include="DataSet\HoaDon.xsc">
       <DependentUpon>HoaDon.xsd</DependentUpon>
     </None>
-    <None Include="HoaDon.xsd">
+    <None Include="DataSet\HoaDon.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>HoaDon.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="HoaDon.xss">
+    <None Include="DataSet\HoaDon.xss">
       <DependentUpon>HoaDon.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -199,26 +199,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QuanLyNhaTroDataSet.xsc">
+    <None Include="DataSet\QuanLyNhaTroDataSet.xsc">
       <DependentUpon>QuanLyNhaTroDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyNhaTroDataSet.xsd">
+    <None Include="DataSet\QuanLyNhaTroDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>QuanLyNhaTroDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QuanLyNhaTroDataSet.xss">
+    <None Include="DataSet\QuanLyNhaTroDataSet.xss">
       <DependentUpon>QuanLyNhaTroDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyNhaTroDataSet1.xsc">
+    <None Include="DataSet\QuanLyNhaTroDataSet1.xsc">
       <DependentUpon>QuanLyNhaTroDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="QuanLyNhaTroDataSet1.xsd">
+    <None Include="DataSet\QuanLyNhaTroDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>QuanLyNhaTroDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QuanLyNhaTroDataSet1.xss">
+    <None Include="DataSet\QuanLyNhaTroDataSet1.xss">
       <DependentUpon>QuanLyNhaTroDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>

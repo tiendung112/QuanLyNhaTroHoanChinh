@@ -62,8 +62,8 @@
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiTietKhachThueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
-            this.chiTietKhachThueTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.ChiTietKhachThueTableAdapter();
+            this.quanLyNhaTroDataSet = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet();
+            this.chiTietKhachThueTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.ChiTietKhachThueTableAdapter();
             this.groip.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_khachHang)).BeginInit();
@@ -409,9 +409,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgv_khachHang;
-        private QuanLyNhaTroDataSet quanLyNhaTroDataSet;
+        private DataSet.QuanLyNhaTroDataSet quanLyNhaTroDataSet;
         private System.Windows.Forms.BindingSource chiTietKhachThueBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.ChiTietKhachThueTableAdapter chiTietKhachThueTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.ChiTietKhachThueTableAdapter chiTietKhachThueTableAdapter;
         private System.Windows.Forms.TextBox txt_CCCD;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

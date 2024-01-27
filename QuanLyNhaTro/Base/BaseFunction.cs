@@ -58,14 +58,14 @@ namespace QuanLyNhaTro
                 int kq = cmd.ExecuteNonQuery(); //Thực hiện câu lệnh SQL
                 if (kq > 0) //Vì executeNonQuery trả về kiểu int, cho biết số dòng được áp dụng.
                 {
-                    MessageBox.Show("Thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             //Bắt lỗi
             catch (Exception ex)
             {
                 //MessageBox.Show("Không thành công", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show(ex.ToString());
+                //MessageBox.Show(ex.ToString());
             }
             cmd.Dispose();//Giải phóng bộ nhớ
                           //cmd = null;
@@ -82,11 +82,11 @@ namespace QuanLyNhaTro
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Dữ liệu đang được dùng, không thể xoá...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                //MessageBox.Show("Dữ liệu đang được dùng, không thể xoá...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             cmd.Dispose();
             cmd = null;

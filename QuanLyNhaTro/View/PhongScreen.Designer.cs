@@ -49,11 +49,11 @@
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiPhongIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
+            this.quanLyNhaTroDataSet = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbx_TTphong = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.phongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter();
+            this.phongTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
@@ -345,9 +345,9 @@
         private System.Windows.Forms.DataGridView dgv_phong;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private QuanLyNhaTroDataSet quanLyNhaTroDataSet;
+        private DataSet.QuanLyNhaTroDataSet quanLyNhaTroDataSet;
         private System.Windows.Forms.BindingSource phongBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter phongTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter phongTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn soPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn viTriPhongIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaPhongDataGridViewTextBoxColumn;

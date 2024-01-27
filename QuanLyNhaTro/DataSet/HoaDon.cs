@@ -10,3 +10,11 @@ namespace QuanLyNhaTro
     {
     }
 }
+namespace QuanLyNhaTro.DataSet
+{
+
+
+    public partial class HoaDon
+    {
+    }
+}

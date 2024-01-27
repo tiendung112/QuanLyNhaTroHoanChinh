@@ -146,13 +146,16 @@ namespace QuanLyNhaTro
             }
             string sql;
             try
-            {string KhachThueId =int .Parse(cbx_khachThue.SelectedValue.ToString()).ToString();
+            {
+                string KhachThueId =int .Parse(cbx_khachThue.SelectedValue.ToString()).ToString();
 
-                sql = "INSERT INTO ChiTietKhachThue(CCCD, HoTen, NgaySinh, Email, SDT, DiaChi, GhiChu,KhachThueID) " +
+                sql = "INSERT INTO ChiTietKhachThue(CCCD, HoTen, NgaySinh, SDT, DiaChi   , Email, GhiChu,KhachThueID) " +
                       "VALUES ('" + txt_CCCD.Text.Trim() + "', '" + txt_HoTen.Text.Trim() + "', '" + dateTimePicker1.Value.ToString("yyyy-MM-dd") +
                       "', '" + txt_Email.Text.Trim() + "', '" + txt_SDT.Text.Trim() + "', '" + txt_DiaChi.Text.Trim() +
                       "', '" + txt_GhiChu.Text.Trim() + "','" +KhachThueId + "')";
                 BaseFunction.RunSQL(sql);
+                MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 LoadKhachHang();
             }
             catch (Exception)

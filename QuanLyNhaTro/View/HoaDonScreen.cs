@@ -94,7 +94,14 @@ namespace QuanLyNhaTro
                 sql = "select SoHopDong from HopDong where SoPhong = '" + txt_SoPhong.Text.Trim() + "' and DaXoa = 1";
                 int SoHopDong =Convert.ToInt32( BaseFunction.GetFieldValues(sql));
                 sql = "select top 1  SoDienMoi from HoaDon where SoHopDong = '" + SoHopDong + "' and DaXoa = 1 order by  SoDienMoi DESC";
-                int SoDienCu = Convert.ToInt32(BaseFunction.GetFieldValues(sql));
+                int sl = BaseFunction.GetCount(sql);
+                int SoDienCu = 0;
+                if(sl > 0)
+                {
+                     SoDienCu = Convert.ToInt32(BaseFunction.GetFieldValues(sql));
+                }
+                
+                
                 sql = "INSERT INTO HoaDon (HoaDonID, SoPhong, SoHopDong, SoDienCu, SoDienMoi, SoNuoc, GiaDien, GiaNuoc, GiaDichVuKhac, GhiChu, NgayLap, ThangLap, NamLap) " +
                      "VALUES ('" + txt_HoaDonID.Text.Trim() + "', '" + txt_SoPhong.Text.Trim() + "', " + SoHopDong + ", " + SoDienCu + ", " + txt_SoDienMoi.Text.Trim() + ", " +
                      txt_SoNuoc.Text.Trim() + ", " + txt_GiaDien.Text.Trim() + ", " + txt_GiaNuoc.Text.Trim() + ", " + txt_GiaKhac.Text.Trim() + ", '" + txt_ghiChu.Text.Trim() + "', " + ngay + ", " + thang + ", " + nam + ")";

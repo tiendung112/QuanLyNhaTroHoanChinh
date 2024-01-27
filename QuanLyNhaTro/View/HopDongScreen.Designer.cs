@@ -62,8 +62,8 @@
             this.tienCocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaThueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hopDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
-            this.hopDongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
+            this.quanLyNhaTroDataSet = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet();
+            this.hopDongTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hopdong)).BeginInit();
@@ -408,9 +408,9 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgv_Hopdong;
-        private QuanLyNhaTroDataSet quanLyNhaTroDataSet;
+        private DataSet.QuanLyNhaTroDataSet quanLyNhaTroDataSet;
         private System.Windows.Forms.BindingSource hopDongBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter hopDongTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter hopDongTableAdapter;
         private System.Windows.Forms.TextBox txt_soHopDong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

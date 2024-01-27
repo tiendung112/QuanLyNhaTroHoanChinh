@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace QuanLyNhaTro {
+namespace QuanLyNhaTro.DataSet {
     
     
     /// <summary>
@@ -5584,7 +5584,7 @@ namespace QuanLyNhaTro {
         }
     }
 }
-namespace QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters {
+namespace QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters {
     
     
     /// <summary>

@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
+            this.quanLyNhaTroDataSet = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet();
             this.hopDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.phongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter();
-            this.hopDongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
+            this.phongTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter();
+            this.hopDongTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -69,7 +69,7 @@
             this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoaDonBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.hoaDon = new QuanLyNhaTro.HoaDon();
+            this.hoaDon = new QuanLyNhaTro.DataSet.HoaDon();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.cbx_nam = new System.Windows.Forms.ComboBox();
@@ -107,15 +107,15 @@
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiPhongIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_Phong = new System.Windows.Forms.TabControl();
-            this.hoaDonTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HoaDonTableAdapter();
-            this.quanLyNhaTroDataSet1 = new QuanLyNhaTro.QuanLyNhaTroDataSet1();
+            this.hoaDonTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.HoaDonTableAdapter();
+            this.quanLyNhaTroDataSet1 = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet1();
             this.hoaDonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.hoaDonTableAdapter1 = new QuanLyNhaTro.QuanLyNhaTroDataSet1TableAdapters.HoaDonTableAdapter();
+            this.hoaDonTableAdapter1 = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSet1TableAdapters.HoaDonTableAdapter();
             this.hoaDonBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.hoaDonTableAdapter2 = new QuanLyNhaTro.HoaDonTableAdapters.HoaDonTableAdapter();
-            this.khachThueTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter();
+            this.hoaDonTableAdapter2 = new QuanLyNhaTro.DataSet.HoaDonTableAdapters.HoaDonTableAdapter();
+            this.khachThueTableAdapter = new QuanLyNhaTro.DataSet.QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter();
             this.btn_ThongTin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
@@ -649,6 +649,7 @@
             this.cbx_HopDong.Name = "cbx_HopDong";
             this.cbx_HopDong.Size = new System.Drawing.Size(221, 30);
             this.cbx_HopDong.TabIndex = 0;
+            this.cbx_HopDong.Click += new System.EventHandler(this.cbx_HopDong_Click_1);
             // 
             // dgv_HopDong
             // 
@@ -987,11 +988,11 @@
         }
 
         #endregion
-        private QuanLyNhaTroDataSet quanLyNhaTroDataSet;
+        private DataSet.QuanLyNhaTroDataSet quanLyNhaTroDataSet;
         private System.Windows.Forms.BindingSource phongBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter phongTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter phongTableAdapter;
         private System.Windows.Forms.BindingSource hopDongBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter hopDongTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter hopDongTableAdapter;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1038,15 +1039,15 @@
         private System.Windows.Forms.DataGridView dtg_hoaDon;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.BindingSource hoaDonBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.HoaDonTableAdapter hoaDonTableAdapter;
-        private QuanLyNhaTroDataSet1 quanLyNhaTroDataSet1;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.HoaDonTableAdapter hoaDonTableAdapter;
+        private DataSet.QuanLyNhaTroDataSet1 quanLyNhaTroDataSet1;
         private System.Windows.Forms.BindingSource hoaDonBindingSource1;
-        private QuanLyNhaTroDataSet1TableAdapters.HoaDonTableAdapter hoaDonTableAdapter1;
+        private DataSet.QuanLyNhaTroDataSet1TableAdapters.HoaDonTableAdapter hoaDonTableAdapter1;
         private System.Windows.Forms.BindingSource hoaDonBindingSource3;
         private System.Windows.Forms.BindingSource hoaDonBindingSource2;
-        private HoaDon hoaDon;
+        private DataSet.HoaDon hoaDon;
         private System.Windows.Forms.BindingSource hoaDonBindingSource4;
-        private HoaDonTableAdapters.HoaDonTableAdapter hoaDonTableAdapter2;
+        private DataSet.HoaDonTableAdapters.HoaDonTableAdapter hoaDonTableAdapter2;
         private System.Windows.Forms.BindingSource hoaDonBindingSource6;
         private System.Windows.Forms.BindingSource hoaDonBindingSource5;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonIDDataGridViewTextBoxColumn;
@@ -1071,7 +1072,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbx_KH;
         private System.Windows.Forms.BindingSource khachThueBindingSource;
-        private QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter khachThueTableAdapter;
+        private DataSet.QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter khachThueTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn khachThueIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btn_ThongTin;

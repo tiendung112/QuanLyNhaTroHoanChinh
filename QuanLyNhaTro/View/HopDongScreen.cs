@@ -50,9 +50,9 @@ namespace QuanLyNhaTro
             //txt.Text = row.Cells["MaPhong"].Value?.ToString() ?? "";
             txt_KhachThueID.Text = row.Cells[1].Value?.ToString().Trim() ?? "";
             txt_soHopDong.Text = row.Cells[0].Value?.ToString().Trim() ?? "";
-            txt_soLuongNguoi.Text = row.Cells[8].Value?.ToString().Trim() ?? "";
+            txt_soLuongNguoi.Text = row.Cells[3].Value?.ToString().Trim() ?? "";
             txt_SoPhong.Text = row.Cells[2].Value?.ToString().Trim() ?? "";
-            txt_TienCoc.Text = row.Cells[9].Value?.ToString().Trim() ?? "";
+            txt_TienCoc.Text = row.Cells[8].Value?.ToString().Trim() ?? "";
 
             // Giả sử cột ngày bắt đầu hợp đồng là cột thứ 4 (index 3)
             string dateString = row.Cells[5].Value?.ToString().Trim();

@@ -1,4 +1,6 @@
-﻿namespace QuanLyNhaTro
+﻿using QuanLyNhaTro.DataSet;
+
+namespace QuanLyNhaTro
 {
     partial class HoaDonScreen
     {
@@ -68,8 +70,8 @@
             this.ghiChuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hoaDon = new QuanLyNhaTro.HoaDon();
-            this.hoaDonTableAdapter = new QuanLyNhaTro.HoaDonTableAdapters.HoaDonTableAdapter();
+            this.hoaDon = new QuanLyNhaTro.DataSet.HoaDon();
+            this.hoaDonTableAdapter = new QuanLyNhaTro.DataSet.HoaDonTableAdapters.HoaDonTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HoaDon)).BeginInit();
@@ -483,9 +485,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private HoaDon hoaDon;
+        private DataSet.HoaDon hoaDon;
         private System.Windows.Forms.BindingSource hoaDonBindingSource;
-        private HoaDonTableAdapters.HoaDonTableAdapter hoaDonTableAdapter;
+        private DataSet.HoaDonTableAdapters.HoaDonTableAdapter hoaDonTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoaDonIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soHopDongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soPhongDataGridViewTextBoxColumn;
