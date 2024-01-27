@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhaTro.Mail;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -7,8 +8,10 @@ namespace QuanLyNhaTro
     public partial class Home : Form
     {
         string chunhaID;
+        string _TenDangNhap;
         public Home(string tenDangNhap)
         {
+            _TenDangNhap = tenDangNhap;
             chunhaID = LayThongTinNguoiDangLogin(tenDangNhap);
             InitializeComponent();
         }
@@ -220,6 +223,13 @@ namespace QuanLyNhaTro
             BaseFunction.FillCombo("SELECT  distinct NamLap FROM HoaDon where DaXoa =1", cbx_nam, "NamLap", "NamLap");
 
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int thangLap = Convert.ToInt32(cbx_thang.SelectedValue.ToString().Trim());
+            int NamLap = Convert.ToInt32(cbx_nam.SelectedValue.ToString().Trim());
+            SendHoaDon.SendEmailsForAllBills(thangLap,NamLap);
+            MessageBox.Show(Text = "Đã gửi hóa đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         #endregion dũng hoá đơn
 
         #region vũ khách hàng
@@ -258,8 +268,15 @@ namespace QuanLyNhaTro
             KhachHangScreen khachHangScreen = new KhachHangScreen();
             khachHangScreen.Show();
         }
+
         #endregion vũ khách hàng
 
+        private void btn_ThongTin_Click(object sender, EventArgs e)
+        {
+            ThongTinBanThan thongTin = new ThongTinBanThan(_TenDangNhap);
+            thongTin.Show();
+
+        }
     }
 }
 

@@ -30,12 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_Sua = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
+            this.txt_TienCoc = new System.Windows.Forms.TextBox();
+            this.dtp_TuNgay = new System.Windows.Forms.DateTimePicker();
+            this.dtp_NgayTra = new System.Windows.Forms.DateTimePicker();
+            this.txt_soLuongNguoi = new System.Windows.Forms.TextBox();
+            this.txt_SoPhong = new System.Windows.Forms.TextBox();
+            this.txt_KhachThueID = new System.Windows.Forms.TextBox();
+            this.txt_soHopDong = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_Hopdong = new System.Windows.Forms.DataGridView();
-            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
-            this.hopDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hopDongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
             this.soHopDongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khachThueIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,32 +60,20 @@
             this.trangThaiThueDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tienCocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaThueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_soHopDong = new System.Windows.Forms.TextBox();
-            this.txt_KhachThueID = new System.Windows.Forms.TextBox();
-            this.txt_SoPhong = new System.Windows.Forms.TextBox();
-            this.txt_soLuongNguoi = new System.Windows.Forms.TextBox();
-            this.dtp_NgayTra = new System.Windows.Forms.DateTimePicker();
-            this.dtp_TuNgay = new System.Windows.Forms.DateTimePicker();
-            this.txt_TienCoc = new System.Windows.Forms.TextBox();
-            this.btn_them = new System.Windows.Forms.Button();
-            this.btn_Sua = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
+            this.hopDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
+            this.hopDongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
+            this.btn_traPhong = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hopdong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopDongBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_traPhong);
             this.groupBox1.Controls.Add(this.btn_xoa);
             this.groupBox1.Controls.Add(this.btn_Sua);
             this.groupBox1.Controls.Add(this.btn_them);
@@ -95,6 +97,150 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức Năng";
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Location = new System.Drawing.Point(862, 238);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(181, 43);
+            this.btn_xoa.TabIndex = 17;
+            this.btn_xoa.Text = "Xoá";
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Location = new System.Drawing.Point(521, 238);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(181, 43);
+            this.btn_Sua.TabIndex = 16;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.Location = new System.Drawing.Point(290, 238);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(181, 43);
+            this.btn_them.TabIndex = 15;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // txt_TienCoc
+            // 
+            this.txt_TienCoc.Location = new System.Drawing.Point(539, 149);
+            this.txt_TienCoc.Name = "txt_TienCoc";
+            this.txt_TienCoc.Size = new System.Drawing.Size(163, 30);
+            this.txt_TienCoc.TabIndex = 14;
+            // 
+            // dtp_TuNgay
+            // 
+            this.dtp_TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_TuNgay.Location = new System.Drawing.Point(878, 79);
+            this.dtp_TuNgay.Name = "dtp_TuNgay";
+            this.dtp_TuNgay.Size = new System.Drawing.Size(165, 30);
+            this.dtp_TuNgay.TabIndex = 13;
+            // 
+            // dtp_NgayTra
+            // 
+            this.dtp_NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_NgayTra.Location = new System.Drawing.Point(878, 146);
+            this.dtp_NgayTra.Name = "dtp_NgayTra";
+            this.dtp_NgayTra.Size = new System.Drawing.Size(165, 30);
+            this.dtp_NgayTra.TabIndex = 12;
+            // 
+            // txt_soLuongNguoi
+            // 
+            this.txt_soLuongNguoi.Location = new System.Drawing.Point(539, 79);
+            this.txt_soLuongNguoi.Name = "txt_soLuongNguoi";
+            this.txt_soLuongNguoi.Size = new System.Drawing.Size(163, 30);
+            this.txt_soLuongNguoi.TabIndex = 11;
+            // 
+            // txt_SoPhong
+            // 
+            this.txt_SoPhong.Location = new System.Drawing.Point(188, 174);
+            this.txt_SoPhong.Name = "txt_SoPhong";
+            this.txt_SoPhong.Size = new System.Drawing.Size(163, 30);
+            this.txt_SoPhong.TabIndex = 10;
+            // 
+            // txt_KhachThueID
+            // 
+            this.txt_KhachThueID.Location = new System.Drawing.Point(188, 114);
+            this.txt_KhachThueID.Name = "txt_KhachThueID";
+            this.txt_KhachThueID.Size = new System.Drawing.Size(164, 30);
+            this.txt_KhachThueID.TabIndex = 9;
+            // 
+            // txt_soHopDong
+            // 
+            this.txt_soHopDong.Location = new System.Drawing.Point(188, 50);
+            this.txt_soHopDong.Name = "txt_soHopDong";
+            this.txt_soHopDong.Size = new System.Drawing.Size(164, 30);
+            this.txt_soHopDong.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(376, 157);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 22);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Tiền Cọc";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(746, 157);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 22);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Ngày Trả";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(746, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 22);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Từ Ngày";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(376, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 22);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Số Lượng Người";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 22);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Số Phòng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Khách Thuê ID";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Số Hợp Đồng";
             // 
             // groupBox2
             // 
@@ -129,20 +275,6 @@
             this.dgv_Hopdong.Size = new System.Drawing.Size(1186, 342);
             this.dgv_Hopdong.TabIndex = 0;
             this.dgv_Hopdong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Hopdong_CellClick);
-            // 
-            // quanLyNhaTroDataSet
-            // 
-            this.quanLyNhaTroDataSet.DataSetName = "QuanLyNhaTroDataSet";
-            this.quanLyNhaTroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hopDongBindingSource
-            // 
-            this.hopDongBindingSource.DataMember = "HopDong";
-            this.hopDongBindingSource.DataSource = this.quanLyNhaTroDataSet;
-            // 
-            // hopDongTableAdapter
-            // 
-            this.hopDongTableAdapter.ClearBeforeFill = true;
             // 
             // soHopDongDataGridViewTextBoxColumn
             // 
@@ -224,149 +356,29 @@
             this.giaThueDataGridViewTextBoxColumn.Name = "giaThueDataGridViewTextBoxColumn";
             this.giaThueDataGridViewTextBoxColumn.Width = 125;
             // 
-            // label1
+            // hopDongBindingSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Số Hợp Đồng";
+            this.hopDongBindingSource.DataMember = "HopDong";
+            this.hopDongBindingSource.DataSource = this.quanLyNhaTroDataSet;
             // 
-            // label2
+            // quanLyNhaTroDataSet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 117);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Khách Thuê ID";
+            this.quanLyNhaTroDataSet.DataSetName = "QuanLyNhaTroDataSet";
+            this.quanLyNhaTroDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label3
+            // hopDongTableAdapter
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Số Phòng";
+            this.hopDongTableAdapter.ClearBeforeFill = true;
             // 
-            // label4
+            // btn_traPhong
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(376, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Số Lượng Người";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(746, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 22);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Từ Ngày";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(746, 157);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Ngày Trả";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(376, 157);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 22);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Tiền Cọc";
-            // 
-            // txt_soHopDong
-            // 
-            this.txt_soHopDong.Location = new System.Drawing.Point(188, 50);
-            this.txt_soHopDong.Name = "txt_soHopDong";
-            this.txt_soHopDong.Size = new System.Drawing.Size(164, 30);
-            this.txt_soHopDong.TabIndex = 8;
-            // 
-            // txt_KhachThueID
-            // 
-            this.txt_KhachThueID.Location = new System.Drawing.Point(188, 114);
-            this.txt_KhachThueID.Name = "txt_KhachThueID";
-            this.txt_KhachThueID.Size = new System.Drawing.Size(164, 30);
-            this.txt_KhachThueID.TabIndex = 9;
-            // 
-            // txt_SoPhong
-            // 
-            this.txt_SoPhong.Location = new System.Drawing.Point(188, 174);
-            this.txt_SoPhong.Name = "txt_SoPhong";
-            this.txt_SoPhong.Size = new System.Drawing.Size(163, 30);
-            this.txt_SoPhong.TabIndex = 10;
-            // 
-            // txt_soLuongNguoi
-            // 
-            this.txt_soLuongNguoi.Location = new System.Drawing.Point(539, 79);
-            this.txt_soLuongNguoi.Name = "txt_soLuongNguoi";
-            this.txt_soLuongNguoi.Size = new System.Drawing.Size(163, 30);
-            this.txt_soLuongNguoi.TabIndex = 11;
-            // 
-            // dtp_NgayTra
-            // 
-            this.dtp_NgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgayTra.Location = new System.Drawing.Point(878, 146);
-            this.dtp_NgayTra.Name = "dtp_NgayTra";
-            this.dtp_NgayTra.Size = new System.Drawing.Size(165, 30);
-            this.dtp_NgayTra.TabIndex = 12;
-            // 
-            // dtp_TuNgay
-            // 
-            this.dtp_TuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_TuNgay.Location = new System.Drawing.Point(878, 79);
-            this.dtp_TuNgay.Name = "dtp_TuNgay";
-            this.dtp_TuNgay.Size = new System.Drawing.Size(165, 30);
-            this.dtp_TuNgay.TabIndex = 13;
-            // 
-            // txt_TienCoc
-            // 
-            this.txt_TienCoc.Location = new System.Drawing.Point(539, 149);
-            this.txt_TienCoc.Name = "txt_TienCoc";
-            this.txt_TienCoc.Size = new System.Drawing.Size(163, 30);
-            this.txt_TienCoc.TabIndex = 14;
-            // 
-            // btn_them
-            // 
-            this.btn_them.Location = new System.Drawing.Point(118, 238);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(181, 43);
-            this.btn_them.TabIndex = 15;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = true;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Location = new System.Drawing.Point(410, 238);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(181, 43);
-            this.btn_Sua.TabIndex = 16;
-            this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.UseVisualStyleBackColor = true;
-            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Location = new System.Drawing.Point(763, 238);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(181, 43);
-            this.btn_xoa.TabIndex = 17;
-            this.btn_xoa.Text = "Xoá";
-            this.btn_xoa.UseVisualStyleBackColor = true;
-            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            this.btn_traPhong.Location = new System.Drawing.Point(61, 238);
+            this.btn_traPhong.Name = "btn_traPhong";
+            this.btn_traPhong.Size = new System.Drawing.Size(181, 43);
+            this.btn_traPhong.TabIndex = 18;
+            this.btn_traPhong.Text = "Trả Phòng";
+            this.btn_traPhong.UseVisualStyleBackColor = true;
+            this.btn_traPhong.Click += new System.EventHandler(this.btn_traPhong_Click);
             // 
             // HopDongScreen
             // 
@@ -384,8 +396,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hopdong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopDongBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,5 +438,6 @@
         private System.Windows.Forms.TextBox txt_soLuongNguoi;
         private System.Windows.Forms.TextBox txt_SoPhong;
         private System.Windows.Forms.TextBox txt_KhachThueID;
+        private System.Windows.Forms.Button btn_traPhong;
     }
 }

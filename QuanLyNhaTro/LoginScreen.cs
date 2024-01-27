@@ -19,15 +19,9 @@ namespace QuanLyNhaTro
             bool check = false;
             if (txt_TaiKhoan.Text.Trim() == "")
             {
-                //error_Tk.SetError(txt_TaiKhoan, "Không được bỏ trống!");
-                //MessageBox.Show("Khong duoc bo trong!", "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //return;
-            }
-            if (txt_MatKhau.Text.Trim() == "")
-            {
-                //error_Pass.SetError(txt_TaiKhoan, "Không được bỏ trống!");
-                //MessageBox.Show("Khong duoc bo trong!", "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //return;
+                Error.SetError(txt_TaiKhoan, "Đăng nhập không thành công!");
+                MessageBox.Show("Đăng nhập không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             string query = "SELECT TenDangNhap,MatKhau FROM ChuNha";
@@ -42,18 +36,16 @@ namespace QuanLyNhaTro
                     checkDangNhap = true;
                 }
             }
-            /* if (!checkDangNhap)
+             if (!checkDangNhap)
              {
                  MessageBox.Show("Tài Khoản hoặc mật khẩu không đúng!");
                  txt_MatKhau.Text = "";
                  reader.Close();
                  return;
-             }*/
+             }
             reader.Close();
             this.Hide();
             Home home = new Home(txt_TaiKhoan.Text.Trim());
-
-            //load.Hide();
             home.Show();
         }
 

@@ -47,6 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseFunction.cs" />
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <DependentUpon>HoaDon.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HoaDon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -83,6 +92,7 @@
     <Compile Include="LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mail\SendHoaDon.cs" />
     <Compile Include="Mail\XacNhan.cs" />
     <Compile Include="NhanVienScreen.cs">
       <SubType>Form</SubType>
@@ -115,6 +125,21 @@
     <Compile Include="QuenMatKhau.Designer.cs">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinBanThan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinBanThan.Designer.cs">
+      <DependentUpon>ThongTinBanThan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinDaXoaScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinDaXoaScreen.Designer.cs">
+      <DependentUpon>ThongTinDaXoaScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDonScreen.resx">
       <DependentUpon>HoaDonScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +172,12 @@
     </Compile>
     <EmbeddedResource Include="QuenMatKhau.resx">
       <DependentUpon>QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinBanThan.resx">
+      <DependentUpon>ThongTinBanThan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinDaXoaScreen.resx">
+      <DependentUpon>ThongTinDaXoaScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="HoaDon.xsc">
       <DependentUpon>HoaDon.xsd</DependentUpon>

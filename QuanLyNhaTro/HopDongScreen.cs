@@ -136,32 +136,45 @@ namespace QuanLyNhaTro
                 txt_SoPhong.Text = "";
                 return;
             }
-            sql = "delete from HopDong where DaXoa =0 and SoHopDong = '" + txt_soHopDong.Text.Trim() + "'";
-            if (BaseFunction.CheckKey(sql))
+            //kiểm tra phòng còn trống không
+            sql = "select * from Phong where DaXoa =1 and TrangThaiPhongID =1 and SoPhong = " + txt_SoPhong.Text.Trim();
+            int sl = BaseFunction.GetCount(sql);
+            if (sl > 0)
             {
-                BaseFunction.RunSqlDel(sql);
-            }
-            themKhachThue(txt_KhachThueID.Text.Trim(),txt_soLuongNguoi.Text.Trim());
-            string NgayLap = DateTime.Now.ToString("yyyy-MM-dd");
-            string tungay = dtp_TuNgay.Value.ToString("yyyy-MM-dd");
-            string denngay = dtp_NgayTra.Value.ToString("yyyy-MM-dd");
-            sql = "select GiaPhong from Phong where DaXoa =1 and SoPhong = " + txt_SoPhong.Text.Trim();
-            string GiaThue =BaseFunction.GetFieldValues(sql);
-            try
-            {
-                sql = "INSERT INTO HopDong(SoHopDong, ChuNhaID, KhachThueID, SoPhong, SoLuongNguoi, NgayLap, TuNgay, NgayTraPhong, TrangThaiThue, TienCoc, GiaThue) " +
-                    "VALUES (" + txt_soHopDong.Text.Trim() + ", 1, " + txt_KhachThueID.Text.Trim() + ", " + txt_SoPhong.Text.Trim() +
-                    ", " + txt_soLuongNguoi.Text.Trim() + ", '" + NgayLap + "', '" + tungay + "', '" + denngay + "', 1, " + txt_TienCoc.Text.Trim() + ", " + GiaThue + ")";
+                sql = "delete from HopDong where DaXoa =0 and SoHopDong = '" + txt_soHopDong.Text.Trim() + "'";
+                if (BaseFunction.CheckKey(sql))
+                {
+                    BaseFunction.RunSqlDel(sql);
+                }
+                themKhachThue(txt_KhachThueID.Text.Trim(), txt_soLuongNguoi.Text.Trim());
+                string NgayLap = DateTime.Now.ToString("yyyy-MM-dd");
+                string tungay = dtp_TuNgay.Value.ToString("yyyy-MM-dd");
+                string denngay = dtp_NgayTra.Value.ToString("yyyy-MM-dd");
+                sql = "select GiaPhong from Phong where DaXoa =1 and SoPhong = " + txt_SoPhong.Text.Trim();
+                string GiaThue = BaseFunction.GetFieldValues(sql);
+                try
+                {
+                    sql = "INSERT INTO HopDong(SoHopDong, ChuNhaID, KhachThueID, SoPhong, SoLuongNguoi, NgayLap, TuNgay, NgayTraPhong, TrangThaiThue, TienCoc, GiaThue) " +
+                        "VALUES (" + txt_soHopDong.Text.Trim() + ", 1, " + txt_KhachThueID.Text.Trim() + ", " + txt_SoPhong.Text.Trim() +
+                        ", " + txt_soLuongNguoi.Text.Trim() + ", '" + NgayLap + "', '" + tungay + "', '" + denngay + "', 1, " + txt_TienCoc.Text.Trim() + ", " + GiaThue + ")";
 
-                BaseFunction.RunSQL(sql);
-                sql = "UPDATE Phong SET TrangThaiPhongID = 2 WHERE SoPhong = " + txt_SoPhong.Text.Trim();
-                BaseFunction.RunSQL(sql);
-                LoadHopDong();
+                    BaseFunction.RunSQL(sql);
+                    sql = "UPDATE Phong SET TrangThaiPhongID = 2 WHERE SoPhong = " + txt_SoPhong.Text.Trim();
+                    BaseFunction.RunSQL(sql);
+                    LoadHopDong();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Thêm không thành công", "Thông báo");
+                }
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Thêm không thành công", "Thông báo");
+               
+                MessageBox.Show("phòng không trống", "Thông báo");
+                return;
             }
+
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -238,6 +251,23 @@ namespace QuanLyNhaTro
                 MessageBox.Show("Xoá không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void btn_traPhong_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sohopdong = txt_soHopDong.Text.Trim();
+                string sql = "UPDATE HopDong SET TrangThaiThue = 0 WHERE SoHopDong = " + sohopdong;
+                BaseFunction.RunSQL(sql);
+                 sql = "UPDATE Phong SET TrangThaiPhongID = 2 WHERE SoPhong = " + txt_SoPhong.Text.Trim();
+                BaseFunction.RunSQL(sql);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Cập nhật không thành công", "Thông báo");
+            }
+           
         }
     }
 }

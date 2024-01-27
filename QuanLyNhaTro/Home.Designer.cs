@@ -47,6 +47,16 @@
             this.btn_ChitietNV = new System.Windows.Forms.Button();
             this.btnhienThiNV = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dgv_KhachHang = new System.Windows.Forms.DataGridView();
+            this.khachThueIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khachThueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btn_ChiTietKH = new System.Windows.Forms.Button();
+            this.btn_hienThiKhachhang = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbx_KH = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dtg_hoaDon = new System.Windows.Forms.DataGridView();
@@ -105,17 +115,8 @@
             this.hoaDonBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonTableAdapter2 = new QuanLyNhaTro.HoaDonTableAdapters.HoaDonTableAdapter();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.cbx_KH = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_hienThiKhachhang = new System.Windows.Forms.Button();
-            this.btn_ChiTietKH = new System.Windows.Forms.Button();
-            this.dgv_KhachHang = new System.Windows.Forms.DataGridView();
-            this.khachThueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khachThueTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter();
-            this.khachThueIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_ThongTin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hopDongBindingSource)).BeginInit();
@@ -123,6 +124,10 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NV)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachThueBindingSource)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_hoaDon)).BeginInit();
@@ -143,10 +148,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource4)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachThueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // phongBindingSource
@@ -301,6 +302,101 @@
             this.tabPage4.Text = "Khách Hàng";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.dgv_KhachHang);
+            this.groupBox6.Location = new System.Drawing.Point(3, 154);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1048, 480);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            // 
+            // dgv_KhachHang
+            // 
+            this.dgv_KhachHang.AutoGenerateColumns = false;
+            this.dgv_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_KhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.khachThueIDDataGridViewTextBoxColumn,
+            this.soLuongDataGridViewTextBoxColumn});
+            this.dgv_KhachHang.DataSource = this.khachThueBindingSource;
+            this.dgv_KhachHang.Location = new System.Drawing.Point(3, 26);
+            this.dgv_KhachHang.Name = "dgv_KhachHang";
+            this.dgv_KhachHang.RowHeadersWidth = 51;
+            this.dgv_KhachHang.RowTemplate.Height = 24;
+            this.dgv_KhachHang.Size = new System.Drawing.Size(1051, 454);
+            this.dgv_KhachHang.TabIndex = 0;
+            // 
+            // khachThueIDDataGridViewTextBoxColumn
+            // 
+            this.khachThueIDDataGridViewTextBoxColumn.DataPropertyName = "KhachThueID";
+            this.khachThueIDDataGridViewTextBoxColumn.HeaderText = "KhachThueID";
+            this.khachThueIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.khachThueIDDataGridViewTextBoxColumn.Name = "khachThueIDDataGridViewTextBoxColumn";
+            this.khachThueIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // soLuongDataGridViewTextBoxColumn
+            // 
+            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.HeaderText = "Số Khách Thuê";
+            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
+            this.soLuongDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // khachThueBindingSource
+            // 
+            this.khachThueBindingSource.DataMember = "KhachThue";
+            this.khachThueBindingSource.DataSource = this.quanLyNhaTroDataSet;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btn_ChiTietKH);
+            this.groupBox5.Controls.Add(this.btn_hienThiKhachhang);
+            this.groupBox5.Controls.Add(this.label5);
+            this.groupBox5.Controls.Add(this.cbx_KH);
+            this.groupBox5.Location = new System.Drawing.Point(2, 21);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1048, 131);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            // 
+            // btn_ChiTietKH
+            // 
+            this.btn_ChiTietKH.Location = new System.Drawing.Point(779, 42);
+            this.btn_ChiTietKH.Name = "btn_ChiTietKH";
+            this.btn_ChiTietKH.Size = new System.Drawing.Size(158, 52);
+            this.btn_ChiTietKH.TabIndex = 3;
+            this.btn_ChiTietKH.Text = "Chi Tiết";
+            this.btn_ChiTietKH.UseVisualStyleBackColor = true;
+            this.btn_ChiTietKH.Click += new System.EventHandler(this.btn_ChiTietKH_Click);
+            // 
+            // btn_hienThiKhachhang
+            // 
+            this.btn_hienThiKhachhang.Location = new System.Drawing.Point(494, 42);
+            this.btn_hienThiKhachhang.Name = "btn_hienThiKhachhang";
+            this.btn_hienThiKhachhang.Size = new System.Drawing.Size(158, 52);
+            this.btn_hienThiKhachhang.TabIndex = 2;
+            this.btn_hienThiKhachhang.Text = "Hiển Thị";
+            this.btn_hienThiKhachhang.UseVisualStyleBackColor = true;
+            this.btn_hienThiKhachhang.Click += new System.EventHandler(this.btn_hienThiKhachhang_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Khách Thuê ";
+            // 
+            // cbx_KH
+            // 
+            this.cbx_KH.FormattingEnabled = true;
+            this.cbx_KH.Location = new System.Drawing.Point(206, 54);
+            this.cbx_KH.Name = "cbx_KH";
+            this.cbx_KH.Size = new System.Drawing.Size(195, 30);
+            this.cbx_KH.TabIndex = 0;
+            this.cbx_KH.Click += new System.EventHandler(this.cbx_KH_Click);
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.groupBox4);
@@ -439,6 +535,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Gửi Mail";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cbx_nam
             // 
@@ -824,110 +921,26 @@
             // 
             this.hoaDonTableAdapter2.ClearBeforeFill = true;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.btn_ChiTietKH);
-            this.groupBox5.Controls.Add(this.btn_hienThiKhachhang);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.cbx_KH);
-            this.groupBox5.Location = new System.Drawing.Point(2, 21);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1048, 131);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.dgv_KhachHang);
-            this.groupBox6.Location = new System.Drawing.Point(3, 154);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(1048, 480);
-            this.groupBox6.TabIndex = 1;
-            this.groupBox6.TabStop = false;
-            // 
-            // cbx_KH
-            // 
-            this.cbx_KH.FormattingEnabled = true;
-            this.cbx_KH.Location = new System.Drawing.Point(206, 54);
-            this.cbx_KH.Name = "cbx_KH";
-            this.cbx_KH.Size = new System.Drawing.Size(195, 30);
-            this.cbx_KH.TabIndex = 0;
-            this.cbx_KH.Click += new System.EventHandler(this.cbx_KH_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 22);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Khách Thuê ";
-            // 
-            // btn_hienThiKhachhang
-            // 
-            this.btn_hienThiKhachhang.Location = new System.Drawing.Point(494, 42);
-            this.btn_hienThiKhachhang.Name = "btn_hienThiKhachhang";
-            this.btn_hienThiKhachhang.Size = new System.Drawing.Size(158, 52);
-            this.btn_hienThiKhachhang.TabIndex = 2;
-            this.btn_hienThiKhachhang.Text = "Hiển Thị";
-            this.btn_hienThiKhachhang.UseVisualStyleBackColor = true;
-            this.btn_hienThiKhachhang.Click += new System.EventHandler(this.btn_hienThiKhachhang_Click);
-            // 
-            // btn_ChiTietKH
-            // 
-            this.btn_ChiTietKH.Location = new System.Drawing.Point(779, 42);
-            this.btn_ChiTietKH.Name = "btn_ChiTietKH";
-            this.btn_ChiTietKH.Size = new System.Drawing.Size(158, 52);
-            this.btn_ChiTietKH.TabIndex = 3;
-            this.btn_ChiTietKH.Text = "Chi Tiết";
-            this.btn_ChiTietKH.UseVisualStyleBackColor = true;
-            this.btn_ChiTietKH.Click += new System.EventHandler(this.btn_ChiTietKH_Click);
-            // 
-            // dgv_KhachHang
-            // 
-            this.dgv_KhachHang.AutoGenerateColumns = false;
-            this.dgv_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_KhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.khachThueIDDataGridViewTextBoxColumn,
-            this.soLuongDataGridViewTextBoxColumn});
-            this.dgv_KhachHang.DataSource = this.khachThueBindingSource;
-            this.dgv_KhachHang.Location = new System.Drawing.Point(3, 26);
-            this.dgv_KhachHang.Name = "dgv_KhachHang";
-            this.dgv_KhachHang.RowHeadersWidth = 51;
-            this.dgv_KhachHang.RowTemplate.Height = 24;
-            this.dgv_KhachHang.Size = new System.Drawing.Size(1051, 454);
-            this.dgv_KhachHang.TabIndex = 0;
-            // 
-            // khachThueBindingSource
-            // 
-            this.khachThueBindingSource.DataMember = "KhachThue";
-            this.khachThueBindingSource.DataSource = this.quanLyNhaTroDataSet;
-            // 
             // khachThueTableAdapter
             // 
             this.khachThueTableAdapter.ClearBeforeFill = true;
             // 
-            // khachThueIDDataGridViewTextBoxColumn
+            // btn_ThongTin
             // 
-            this.khachThueIDDataGridViewTextBoxColumn.DataPropertyName = "KhachThueID";
-            this.khachThueIDDataGridViewTextBoxColumn.HeaderText = "KhachThueID";
-            this.khachThueIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.khachThueIDDataGridViewTextBoxColumn.Name = "khachThueIDDataGridViewTextBoxColumn";
-            this.khachThueIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // soLuongDataGridViewTextBoxColumn
-            // 
-            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
-            this.soLuongDataGridViewTextBoxColumn.HeaderText = "Số Khách Thuê";
-            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
-            this.soLuongDataGridViewTextBoxColumn.Width = 200;
+            this.btn_ThongTin.Location = new System.Drawing.Point(1151, 12);
+            this.btn_ThongTin.Name = "btn_ThongTin";
+            this.btn_ThongTin.Size = new System.Drawing.Size(98, 138);
+            this.btn_ThongTin.TabIndex = 2;
+            this.btn_ThongTin.Text = "Thông Tin Bản thân";
+            this.btn_ThongTin.UseVisualStyleBackColor = true;
+            this.btn_ThongTin.Click += new System.EventHandler(this.btn_ThongTin_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1275, 777);
+            this.Controls.Add(this.btn_ThongTin);
             this.Controls.Add(this.tb_Phong);
             this.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -942,6 +955,11 @@
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NV)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachThueBindingSource)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_hoaDon)).EndInit();
@@ -964,11 +982,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource4)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachThueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1061,5 +1074,6 @@
         private QuanLyNhaTroDataSetTableAdapters.KhachThueTableAdapter khachThueTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn khachThueIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btn_ThongTin;
     }
 }
