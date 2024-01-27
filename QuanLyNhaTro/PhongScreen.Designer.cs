@@ -51,9 +51,9 @@
             this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbx_TTphong = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.phongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.PhongTableAdapter();
-            this.cbx_TTphong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyNhaTroDataSet)).BeginInit();
@@ -78,7 +78,7 @@
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(134, 37);
-            this.btn_Xoa.TabIndex = 19;
+            this.btn_Xoa.TabIndex = 7;
             this.btn_Xoa.Text = "Xoá";
             this.btn_Xoa.UseVisualStyleBackColor = true;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
@@ -89,7 +89,7 @@
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(134, 37);
-            this.btn_Sua.TabIndex = 20;
+            this.btn_Sua.TabIndex = 6;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
@@ -100,7 +100,7 @@
             this.btn_ThemPhong.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_ThemPhong.Name = "btn_ThemPhong";
             this.btn_ThemPhong.Size = new System.Drawing.Size(134, 37);
-            this.btn_ThemPhong.TabIndex = 21;
+            this.btn_ThemPhong.TabIndex = 5;
             this.btn_ThemPhong.Text = "Thêm";
             this.btn_ThemPhong.UseVisualStyleBackColor = true;
             this.btn_ThemPhong.Click += new System.EventHandler(this.btn_ThemPhong_Click);
@@ -111,7 +111,7 @@
             this.txt_GiaPhong.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_GiaPhong.Name = "txt_GiaPhong";
             this.txt_GiaPhong.Size = new System.Drawing.Size(290, 30);
-            this.txt_GiaPhong.TabIndex = 14;
+            this.txt_GiaPhong.TabIndex = 4;
             // 
             // txt_SoPhong
             // 
@@ -119,7 +119,7 @@
             this.txt_SoPhong.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_SoPhong.Name = "txt_SoPhong";
             this.txt_SoPhong.Size = new System.Drawing.Size(290, 30);
-            this.txt_SoPhong.TabIndex = 16;
+            this.txt_SoPhong.TabIndex = 1;
             // 
             // txt_GhiChu
             // 
@@ -128,7 +128,7 @@
             this.txt_GhiChu.Multiline = true;
             this.txt_GhiChu.Name = "txt_GhiChu";
             this.txt_GhiChu.Size = new System.Drawing.Size(290, 88);
-            this.txt_GhiChu.TabIndex = 17;
+            this.txt_GhiChu.TabIndex = 3;
             // 
             // txt_Tang
             // 
@@ -136,7 +136,7 @@
             this.txt_Tang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_Tang.Name = "txt_Tang";
             this.txt_Tang.Size = new System.Drawing.Size(290, 30);
-            this.txt_Tang.TabIndex = 18;
+            this.txt_Tang.TabIndex = 0;
             // 
             // label6
             // 
@@ -206,7 +206,7 @@
             this.dgv_phong.RowHeadersWidth = 51;
             this.dgv_phong.RowTemplate.Height = 24;
             this.dgv_phong.Size = new System.Drawing.Size(1114, 404);
-            this.dgv_phong.TabIndex = 23;
+            this.dgv_phong.TabIndex = 0;
             this.dgv_phong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phong_CellClick);
             // 
             // soPhongDataGridViewTextBoxColumn
@@ -281,6 +281,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản Lý";
             // 
+            // cbx_TTphong
+            // 
+            this.cbx_TTphong.FormattingEnabled = true;
+            this.cbx_TTphong.Location = new System.Drawing.Point(205, 168);
+            this.cbx_TTphong.Name = "cbx_TTphong";
+            this.cbx_TTphong.Size = new System.Drawing.Size(283, 30);
+            this.cbx_TTphong.TabIndex = 2;
+            this.cbx_TTphong.Click += new System.EventHandler(this.cbx_TTphong_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgv_phong);
@@ -294,15 +303,6 @@
             // phongTableAdapter
             // 
             this.phongTableAdapter.ClearBeforeFill = true;
-            // 
-            // cbx_TTphong
-            // 
-            this.cbx_TTphong.FormattingEnabled = true;
-            this.cbx_TTphong.Location = new System.Drawing.Point(205, 168);
-            this.cbx_TTphong.Name = "cbx_TTphong";
-            this.cbx_TTphong.Size = new System.Drawing.Size(283, 30);
-            this.cbx_TTphong.TabIndex = 22;
-            this.cbx_TTphong.Click += new System.EventHandler(this.cbx_TTphong_Click);
             // 
             // PhongScreen
             // 

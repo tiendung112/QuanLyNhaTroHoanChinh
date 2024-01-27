@@ -109,35 +109,35 @@
             this.txt_TenDangNhap.Location = new System.Drawing.Point(246, 102);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
             this.txt_TenDangNhap.Size = new System.Drawing.Size(301, 30);
-            this.txt_TenDangNhap.TabIndex = 6;
+            this.txt_TenDangNhap.TabIndex = 0;
             // 
             // txt_hoTen
             // 
             this.txt_hoTen.Location = new System.Drawing.Point(247, 159);
             this.txt_hoTen.Name = "txt_hoTen";
             this.txt_hoTen.Size = new System.Drawing.Size(301, 30);
-            this.txt_hoTen.TabIndex = 7;
+            this.txt_hoTen.TabIndex = 1;
             // 
             // txt_email
             // 
             this.txt_email.Location = new System.Drawing.Point(247, 295);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(301, 30);
-            this.txt_email.TabIndex = 9;
+            this.txt_email.TabIndex = 3;
             // 
             // txt_Sdt
             // 
             this.txt_Sdt.Location = new System.Drawing.Point(247, 362);
             this.txt_Sdt.Name = "txt_Sdt";
             this.txt_Sdt.Size = new System.Drawing.Size(301, 30);
-            this.txt_Sdt.TabIndex = 10;
+            this.txt_Sdt.TabIndex = 4;
             // 
             // btn_thayThongTin
             // 
             this.btn_thayThongTin.Location = new System.Drawing.Point(71, 439);
             this.btn_thayThongTin.Name = "btn_thayThongTin";
             this.btn_thayThongTin.Size = new System.Drawing.Size(165, 41);
-            this.btn_thayThongTin.TabIndex = 11;
+            this.btn_thayThongTin.TabIndex = 5;
             this.btn_thayThongTin.Text = "Thay Đổi ";
             this.btn_thayThongTin.UseVisualStyleBackColor = true;
             this.btn_thayThongTin.Click += new System.EventHandler(this.btn_thayThongTin_Click);
@@ -147,7 +147,7 @@
             this.btn_DoiMatKhau.Location = new System.Drawing.Point(309, 439);
             this.btn_DoiMatKhau.Name = "btn_DoiMatKhau";
             this.btn_DoiMatKhau.Size = new System.Drawing.Size(165, 41);
-            this.btn_DoiMatKhau.TabIndex = 12;
+            this.btn_DoiMatKhau.TabIndex = 6;
             this.btn_DoiMatKhau.Text = "Đổi Mật Khẩu";
             this.btn_DoiMatKhau.UseVisualStyleBackColor = true;
             this.btn_DoiMatKhau.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
@@ -157,7 +157,7 @@
             this.btn_thungrac.Location = new System.Drawing.Point(547, 439);
             this.btn_thungrac.Name = "btn_thungrac";
             this.btn_thungrac.Size = new System.Drawing.Size(165, 41);
-            this.btn_thungrac.TabIndex = 13;
+            this.btn_thungrac.TabIndex = 7;
             this.btn_thungrac.Text = "Thùng Rác";
             this.btn_thungrac.UseVisualStyleBackColor = true;
             this.btn_thungrac.Click += new System.EventHandler(this.btn_thungrac_Click);
@@ -168,7 +168,7 @@
             this.dtp_NgaySinh.Location = new System.Drawing.Point(247, 227);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(300, 30);
-            this.dtp_NgaySinh.TabIndex = 14;
+            this.dtp_NgaySinh.TabIndex = 2;
             // 
             // ThongTinBanThan
             // 

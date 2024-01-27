@@ -30,10 +30,10 @@
         {
             this.tb_Phong = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btn_hienThi = new System.Windows.Forms.Button();
-            this.btn_CTPhong = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbx_phong = new System.Windows.Forms.ComboBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.btn_KhoiPhucPhong = new System.Windows.Forms.Button();
+            this.txt_SoPhong = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgv_Phong = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -75,6 +75,7 @@
             this.btnhienThiNV = new System.Windows.Forms.Button();
             this.tb_Phong.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Phong)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -100,71 +101,74 @@
             this.tb_Phong.Controls.Add(this.tabPage3);
             this.tb_Phong.Controls.Add(this.tabPage4);
             this.tb_Phong.Controls.Add(this.tabPage5);
-            this.tb_Phong.Location = new System.Drawing.Point(80, 101);
+            this.tb_Phong.Location = new System.Drawing.Point(2, 53);
             this.tb_Phong.Margin = new System.Windows.Forms.Padding(5);
             this.tb_Phong.Name = "tb_Phong";
             this.tb_Phong.Padding = new System.Drawing.Point(10, 5);
             this.tb_Phong.SelectedIndex = 0;
-            this.tb_Phong.Size = new System.Drawing.Size(1061, 673);
+            this.tb_Phong.Size = new System.Drawing.Size(1139, 721);
             this.tb_Phong.TabIndex = 2;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.btn_hienThi);
-            this.tabPage1.Controls.Add(this.btn_CTPhong);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.cbx_phong);
+            this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 35);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage1.Size = new System.Drawing.Size(1131, 682);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Phòng";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btn_hienThi
+            // groupBox7
             // 
-            this.btn_hienThi.Location = new System.Drawing.Point(430, 59);
-            this.btn_hienThi.Name = "btn_hienThi";
-            this.btn_hienThi.Size = new System.Drawing.Size(131, 33);
-            this.btn_hienThi.TabIndex = 3;
-            this.btn_hienThi.Text = "Hiển Thị";
-            this.btn_hienThi.UseVisualStyleBackColor = true;
+            this.groupBox7.Controls.Add(this.btn_KhoiPhucPhong);
+            this.groupBox7.Controls.Add(this.txt_SoPhong);
+            this.groupBox7.Controls.Add(this.label8);
+            this.groupBox7.Location = new System.Drawing.Point(0, 3);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(1131, 136);
+            this.groupBox7.TabIndex = 25;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Quản Lý";
             // 
-            // btn_CTPhong
+            // btn_KhoiPhucPhong
             // 
-            this.btn_CTPhong.Location = new System.Drawing.Point(738, 54);
-            this.btn_CTPhong.Name = "btn_CTPhong";
-            this.btn_CTPhong.Size = new System.Drawing.Size(247, 45);
-            this.btn_CTPhong.TabIndex = 0;
-            this.btn_CTPhong.Text = "Xem Chi Tiết";
-            this.btn_CTPhong.UseVisualStyleBackColor = true;
+            this.btn_KhoiPhucPhong.Location = new System.Drawing.Point(645, 51);
+            this.btn_KhoiPhucPhong.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_KhoiPhucPhong.Name = "btn_KhoiPhucPhong";
+            this.btn_KhoiPhucPhong.Size = new System.Drawing.Size(134, 37);
+            this.btn_KhoiPhucPhong.TabIndex = 21;
+            this.btn_KhoiPhucPhong.Text = "Khôi Phục";
+            this.btn_KhoiPhucPhong.UseVisualStyleBackColor = true;
+            this.btn_KhoiPhucPhong.Click += new System.EventHandler(this.btn_KhoiPhucPhong_Click);
             // 
-            // label1
+            // txt_SoPhong
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Vị Trí Phòng";
+            this.txt_SoPhong.Location = new System.Drawing.Point(180, 58);
+            this.txt_SoPhong.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_SoPhong.Name = "txt_SoPhong";
+            this.txt_SoPhong.Size = new System.Drawing.Size(290, 30);
+            this.txt_SoPhong.TabIndex = 16;
             // 
-            // cbx_phong
+            // label8
             // 
-            this.cbx_phong.FormattingEnabled = true;
-            this.cbx_phong.Location = new System.Drawing.Point(197, 62);
-            this.cbx_phong.Name = "cbx_phong";
-            this.cbx_phong.Size = new System.Drawing.Size(205, 30);
-            this.cbx_phong.TabIndex = 1;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(43, 66);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 22);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Số Phòng";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgv_Phong);
-            this.groupBox1.Location = new System.Drawing.Point(3, 116);
+            this.groupBox1.Location = new System.Drawing.Point(0, 145);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1047, 534);
+            this.groupBox1.Size = new System.Drawing.Size(1131, 541);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
@@ -177,8 +181,9 @@
             this.dgv_Phong.Name = "dgv_Phong";
             this.dgv_Phong.RowHeadersWidth = 51;
             this.dgv_Phong.RowTemplate.Height = 24;
-            this.dgv_Phong.Size = new System.Drawing.Size(1041, 505);
+            this.dgv_Phong.Size = new System.Drawing.Size(1125, 512);
             this.dgv_Phong.TabIndex = 0;
+            this.dgv_Phong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Phong_CellClick);
             // 
             // tabPage2
             // 
@@ -188,7 +193,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage2.Size = new System.Drawing.Size(1131, 682);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hợp Đồng";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -201,7 +206,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1043, 112);
+            this.panel1.Size = new System.Drawing.Size(1121, 112);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -249,7 +254,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage3.Size = new System.Drawing.Size(1131, 682);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Hoá Đơn";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -357,7 +362,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 35);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage4.Size = new System.Drawing.Size(1131, 682);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Khách Hàng";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -438,7 +443,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 35);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1053, 634);
+            this.tabPage5.Size = new System.Drawing.Size(1131, 682);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Nhân viên";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -553,9 +558,11 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "ThongTinScreen";
             this.Text = "ThongTinScreen";
+            this.Load += new System.EventHandler(this.ThongTinScreen_Load);
             this.tb_Phong.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Phong)).EndInit();
             this.tabPage2.ResumeLayout(false);
@@ -583,10 +590,6 @@
 
         private System.Windows.Forms.TabControl tb_Phong;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button btn_hienThi;
-        private System.Windows.Forms.Button btn_CTPhong;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbx_phong;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgv_Phong;
         private System.Windows.Forms.TabPage tabPage2;
@@ -626,5 +629,9 @@
         private System.Windows.Forms.TextBox txtTimkiemNV;
         private System.Windows.Forms.Button btn_ChitietNV;
         private System.Windows.Forms.Button btnhienThiNV;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button btn_KhoiPhucPhong;
+        private System.Windows.Forms.TextBox txt_SoPhong;
+        private System.Windows.Forms.Label label8;
     }
 }

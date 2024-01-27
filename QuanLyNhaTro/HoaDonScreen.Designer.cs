@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_sendMail = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
@@ -69,7 +70,6 @@
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDon = new QuanLyNhaTro.HoaDon();
             this.hoaDonTableAdapter = new QuanLyNhaTro.HoaDonTableAdapters.HoaDonTableAdapter();
-            this.btn_sendMail = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HoaDon)).BeginInit();
@@ -106,12 +106,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức Năng";
             // 
+            // btn_sendMail
+            // 
+            this.btn_sendMail.Location = new System.Drawing.Point(82, 223);
+            this.btn_sendMail.Name = "btn_sendMail";
+            this.btn_sendMail.Size = new System.Drawing.Size(179, 39);
+            this.btn_sendMail.TabIndex = 8;
+            this.btn_sendMail.Text = "Gửi Mail Hoá Đơn";
+            this.btn_sendMail.UseVisualStyleBackColor = true;
+            // 
             // btn_Xoa
             // 
             this.btn_Xoa.Location = new System.Drawing.Point(824, 223);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(136, 39);
-            this.btn_Xoa.TabIndex = 18;
+            this.btn_Xoa.TabIndex = 11;
             this.btn_Xoa.Text = "Xoá";
             this.btn_Xoa.UseVisualStyleBackColor = true;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
@@ -121,7 +130,7 @@
             this.btn_Sua.Location = new System.Drawing.Point(545, 223);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(136, 39);
-            this.btn_Sua.TabIndex = 17;
+            this.btn_Sua.TabIndex = 10;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
@@ -131,7 +140,7 @@
             this.btn_them.Location = new System.Drawing.Point(313, 223);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(136, 39);
-            this.btn_them.TabIndex = 16;
+            this.btn_them.TabIndex = 9;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
@@ -141,56 +150,56 @@
             this.txt_GiaKhac.Location = new System.Drawing.Point(908, 168);
             this.txt_GiaKhac.Name = "txt_GiaKhac";
             this.txt_GiaKhac.Size = new System.Drawing.Size(136, 30);
-            this.txt_GiaKhac.TabIndex = 15;
+            this.txt_GiaKhac.TabIndex = 7;
             // 
             // txt_GiaNuoc
             // 
             this.txt_GiaNuoc.Location = new System.Drawing.Point(908, 104);
             this.txt_GiaNuoc.Name = "txt_GiaNuoc";
             this.txt_GiaNuoc.Size = new System.Drawing.Size(136, 30);
-            this.txt_GiaNuoc.TabIndex = 14;
+            this.txt_GiaNuoc.TabIndex = 6;
             // 
             // txt_SoNuoc
             // 
             this.txt_SoNuoc.Location = new System.Drawing.Point(908, 45);
             this.txt_SoNuoc.Name = "txt_SoNuoc";
             this.txt_SoNuoc.Size = new System.Drawing.Size(136, 30);
-            this.txt_SoNuoc.TabIndex = 13;
+            this.txt_SoNuoc.TabIndex = 5;
             // 
             // txt_ghiChu
             // 
             this.txt_ghiChu.Location = new System.Drawing.Point(506, 168);
             this.txt_ghiChu.Name = "txt_ghiChu";
             this.txt_ghiChu.Size = new System.Drawing.Size(136, 30);
-            this.txt_ghiChu.TabIndex = 12;
+            this.txt_ghiChu.TabIndex = 4;
             // 
             // txt_GiaDien
             // 
             this.txt_GiaDien.Location = new System.Drawing.Point(506, 112);
             this.txt_GiaDien.Name = "txt_GiaDien";
             this.txt_GiaDien.Size = new System.Drawing.Size(136, 30);
-            this.txt_GiaDien.TabIndex = 11;
+            this.txt_GiaDien.TabIndex = 3;
             // 
             // txt_SoDienMoi
             // 
             this.txt_SoDienMoi.Location = new System.Drawing.Point(506, 50);
             this.txt_SoDienMoi.Name = "txt_SoDienMoi";
             this.txt_SoDienMoi.Size = new System.Drawing.Size(136, 30);
-            this.txt_SoDienMoi.TabIndex = 10;
+            this.txt_SoDienMoi.TabIndex = 2;
             // 
             // txt_SoPhong
             // 
             this.txt_SoPhong.Location = new System.Drawing.Point(174, 112);
             this.txt_SoPhong.Name = "txt_SoPhong";
             this.txt_SoPhong.Size = new System.Drawing.Size(136, 30);
-            this.txt_SoPhong.TabIndex = 9;
+            this.txt_SoPhong.TabIndex = 1;
             // 
             // txt_HoaDonID
             // 
             this.txt_HoaDonID.Location = new System.Drawing.Point(174, 50);
             this.txt_HoaDonID.Name = "txt_HoaDonID";
             this.txt_HoaDonID.Size = new System.Drawing.Size(136, 30);
-            this.txt_HoaDonID.TabIndex = 8;
+            this.txt_HoaDonID.TabIndex = 0;
             // 
             // label8
             // 
@@ -428,15 +437,6 @@
             // hoaDonTableAdapter
             // 
             this.hoaDonTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_sendMail
-            // 
-            this.btn_sendMail.Location = new System.Drawing.Point(82, 223);
-            this.btn_sendMail.Name = "btn_sendMail";
-            this.btn_sendMail.Size = new System.Drawing.Size(179, 39);
-            this.btn_sendMail.TabIndex = 19;
-            this.btn_sendMail.Text = "Gửi Mail Hoá Đơn";
-            this.btn_sendMail.UseVisualStyleBackColor = true;
             // 
             // HoaDonScreen
             // 

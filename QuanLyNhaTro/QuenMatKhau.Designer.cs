@@ -53,7 +53,7 @@
             this.panel2.Location = new System.Drawing.Point(1, 237);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(698, 187);
-            this.panel2.TabIndex = 8;
+            this.panel2.TabIndex = 1;
             // 
             // btn_XacNhan
             // 
@@ -61,7 +61,7 @@
             this.btn_XacNhan.Location = new System.Drawing.Point(440, 68);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(145, 43);
-            this.btn_XacNhan.TabIndex = 5;
+            this.btn_XacNhan.TabIndex = 2;
             this.btn_XacNhan.Text = "Xác Nhận";
             this.btn_XacNhan.UseVisualStyleBackColor = true;
             // 
@@ -72,7 +72,7 @@
             this.txt_MatKhauMoi.Multiline = true;
             this.txt_MatKhauMoi.Name = "txt_MatKhauMoi";
             this.txt_MatKhauMoi.Size = new System.Drawing.Size(262, 37);
-            this.txt_MatKhauMoi.TabIndex = 4;
+            this.txt_MatKhauMoi.TabIndex = 1;
             // 
             // txt_MaXacNhan
             // 
@@ -81,7 +81,7 @@
             this.txt_MaXacNhan.Multiline = true;
             this.txt_MaXacNhan.Name = "txt_MaXacNhan";
             this.txt_MaXacNhan.Size = new System.Drawing.Size(262, 37);
-            this.txt_MaXacNhan.TabIndex = 3;
+            this.txt_MaXacNhan.TabIndex = 0;
             // 
             // label4
             // 
@@ -111,7 +111,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 88);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(698, 153);
-            this.panel1.TabIndex = 7;
+            this.panel1.TabIndex = 0;
             // 
             // txt_mail
             // 
@@ -129,7 +129,7 @@
             this.label1.Location = new System.Drawing.Point(10, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 22);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Email";
             // 
             // btn_GuiMa

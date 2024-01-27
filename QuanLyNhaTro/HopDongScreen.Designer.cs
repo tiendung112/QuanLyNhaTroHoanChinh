@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_traPhong = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.hopDongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyNhaTroDataSet = new QuanLyNhaTro.QuanLyNhaTroDataSet();
             this.hopDongTableAdapter = new QuanLyNhaTro.QuanLyNhaTroDataSetTableAdapters.HopDongTableAdapter();
-            this.btn_traPhong = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hopdong)).BeginInit();
@@ -98,12 +98,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức Năng";
             // 
+            // btn_traPhong
+            // 
+            this.btn_traPhong.Location = new System.Drawing.Point(61, 238);
+            this.btn_traPhong.Name = "btn_traPhong";
+            this.btn_traPhong.Size = new System.Drawing.Size(181, 43);
+            this.btn_traPhong.TabIndex = 8;
+            this.btn_traPhong.Text = "Trả Phòng";
+            this.btn_traPhong.UseVisualStyleBackColor = true;
+            this.btn_traPhong.Click += new System.EventHandler(this.btn_traPhong_Click);
+            // 
             // btn_xoa
             // 
             this.btn_xoa.Location = new System.Drawing.Point(862, 238);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(181, 43);
-            this.btn_xoa.TabIndex = 17;
+            this.btn_xoa.TabIndex = 11;
             this.btn_xoa.Text = "Xoá";
             this.btn_xoa.UseVisualStyleBackColor = true;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
@@ -113,7 +123,7 @@
             this.btn_Sua.Location = new System.Drawing.Point(521, 238);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(181, 43);
-            this.btn_Sua.TabIndex = 16;
+            this.btn_Sua.TabIndex = 10;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
@@ -123,7 +133,7 @@
             this.btn_them.Location = new System.Drawing.Point(290, 238);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(181, 43);
-            this.btn_them.TabIndex = 15;
+            this.btn_them.TabIndex = 9;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
@@ -133,7 +143,7 @@
             this.txt_TienCoc.Location = new System.Drawing.Point(539, 149);
             this.txt_TienCoc.Name = "txt_TienCoc";
             this.txt_TienCoc.Size = new System.Drawing.Size(163, 30);
-            this.txt_TienCoc.TabIndex = 14;
+            this.txt_TienCoc.TabIndex = 4;
             // 
             // dtp_TuNgay
             // 
@@ -141,7 +151,7 @@
             this.dtp_TuNgay.Location = new System.Drawing.Point(878, 79);
             this.dtp_TuNgay.Name = "dtp_TuNgay";
             this.dtp_TuNgay.Size = new System.Drawing.Size(165, 30);
-            this.dtp_TuNgay.TabIndex = 13;
+            this.dtp_TuNgay.TabIndex = 6;
             // 
             // dtp_NgayTra
             // 
@@ -149,35 +159,35 @@
             this.dtp_NgayTra.Location = new System.Drawing.Point(878, 146);
             this.dtp_NgayTra.Name = "dtp_NgayTra";
             this.dtp_NgayTra.Size = new System.Drawing.Size(165, 30);
-            this.dtp_NgayTra.TabIndex = 12;
+            this.dtp_NgayTra.TabIndex = 7;
             // 
             // txt_soLuongNguoi
             // 
             this.txt_soLuongNguoi.Location = new System.Drawing.Point(539, 79);
             this.txt_soLuongNguoi.Name = "txt_soLuongNguoi";
             this.txt_soLuongNguoi.Size = new System.Drawing.Size(163, 30);
-            this.txt_soLuongNguoi.TabIndex = 11;
+            this.txt_soLuongNguoi.TabIndex = 3;
             // 
             // txt_SoPhong
             // 
             this.txt_SoPhong.Location = new System.Drawing.Point(188, 174);
             this.txt_SoPhong.Name = "txt_SoPhong";
             this.txt_SoPhong.Size = new System.Drawing.Size(163, 30);
-            this.txt_SoPhong.TabIndex = 10;
+            this.txt_SoPhong.TabIndex = 2;
             // 
             // txt_KhachThueID
             // 
             this.txt_KhachThueID.Location = new System.Drawing.Point(188, 114);
             this.txt_KhachThueID.Name = "txt_KhachThueID";
             this.txt_KhachThueID.Size = new System.Drawing.Size(164, 30);
-            this.txt_KhachThueID.TabIndex = 9;
+            this.txt_KhachThueID.TabIndex = 1;
             // 
             // txt_soHopDong
             // 
             this.txt_soHopDong.Location = new System.Drawing.Point(188, 50);
             this.txt_soHopDong.Name = "txt_soHopDong";
             this.txt_soHopDong.Size = new System.Drawing.Size(164, 30);
-            this.txt_soHopDong.TabIndex = 8;
+            this.txt_soHopDong.TabIndex = 0;
             // 
             // label8
             // 
@@ -369,16 +379,6 @@
             // hopDongTableAdapter
             // 
             this.hopDongTableAdapter.ClearBeforeFill = true;
-            // 
-            // btn_traPhong
-            // 
-            this.btn_traPhong.Location = new System.Drawing.Point(61, 238);
-            this.btn_traPhong.Name = "btn_traPhong";
-            this.btn_traPhong.Size = new System.Drawing.Size(181, 43);
-            this.btn_traPhong.TabIndex = 18;
-            this.btn_traPhong.Text = "Trả Phòng";
-            this.btn_traPhong.UseVisualStyleBackColor = true;
-            this.btn_traPhong.Click += new System.EventHandler(this.btn_traPhong_Click);
             // 
             // HopDongScreen
             // 

@@ -67,7 +67,7 @@
             this.txt_Matkhau.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Matkhau.Name = "txt_Matkhau";
             this.txt_Matkhau.Size = new System.Drawing.Size(188, 30);
-            this.txt_Matkhau.TabIndex = 47;
+            this.txt_Matkhau.TabIndex = 6;
             // 
             // txt_TenDN
             // 
@@ -76,7 +76,7 @@
             this.txt_TenDN.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenDN.Name = "txt_TenDN";
             this.txt_TenDN.Size = new System.Drawing.Size(188, 30);
-            this.txt_TenDN.TabIndex = 46;
+            this.txt_TenDN.TabIndex = 5;
             // 
             // txt_SDT
             // 
@@ -85,7 +85,7 @@
             this.txt_SDT.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.Size = new System.Drawing.Size(188, 30);
-            this.txt_SDT.TabIndex = 45;
+            this.txt_SDT.TabIndex = 4;
             // 
             // txt_Email
             // 
@@ -94,7 +94,7 @@
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(188, 30);
-            this.txt_Email.TabIndex = 44;
+            this.txt_Email.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -201,7 +201,7 @@
             this.btn_XoaNV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_XoaNV.Name = "btn_XoaNV";
             this.btn_XoaNV.Size = new System.Drawing.Size(104, 46);
-            this.btn_XoaNV.TabIndex = 42;
+            this.btn_XoaNV.TabIndex = 9;
             this.btn_XoaNV.Text = "Xóa";
             this.btn_XoaNV.UseVisualStyleBackColor = true;
             this.btn_XoaNV.Click += new System.EventHandler(this.btn_XoaNV_Click);
@@ -213,7 +213,7 @@
             this.btn_SuaNV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_SuaNV.Name = "btn_SuaNV";
             this.btn_SuaNV.Size = new System.Drawing.Size(129, 46);
-            this.btn_SuaNV.TabIndex = 41;
+            this.btn_SuaNV.TabIndex = 8;
             this.btn_SuaNV.Text = "Sửa";
             this.btn_SuaNV.UseVisualStyleBackColor = true;
             this.btn_SuaNV.Click += new System.EventHandler(this.btn_SuaNV_Click);
@@ -225,7 +225,7 @@
             this.btn_ThemNV.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemNV.Name = "btn_ThemNV";
             this.btn_ThemNV.Size = new System.Drawing.Size(107, 43);
-            this.btn_ThemNV.TabIndex = 40;
+            this.btn_ThemNV.TabIndex = 7;
             this.btn_ThemNV.Text = "Thêm";
             this.btn_ThemNV.UseVisualStyleBackColor = true;
             this.btn_ThemNV.Click += new System.EventHandler(this.btn_ThemNV_Click);
@@ -313,7 +313,7 @@
             this.dtp_Ngaysinh.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_Ngaysinh.Name = "dtp_Ngaysinh";
             this.dtp_Ngaysinh.Size = new System.Drawing.Size(188, 30);
-            this.dtp_Ngaysinh.TabIndex = 32;
+            this.dtp_Ngaysinh.TabIndex = 2;
             // 
             // txt_Hoten
             // 
@@ -322,7 +322,7 @@
             this.txt_Hoten.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Hoten.Name = "txt_Hoten";
             this.txt_Hoten.Size = new System.Drawing.Size(188, 30);
-            this.txt_Hoten.TabIndex = 31;
+            this.txt_Hoten.TabIndex = 1;
             // 
             // label1
             // 
@@ -342,7 +342,7 @@
             this.txt_ChuNhaID.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ChuNhaID.Name = "txt_ChuNhaID";
             this.txt_ChuNhaID.Size = new System.Drawing.Size(149, 30);
-            this.txt_ChuNhaID.TabIndex = 49;
+            this.txt_ChuNhaID.TabIndex = 0;
             // 
             // NhanVienScreen
             // 

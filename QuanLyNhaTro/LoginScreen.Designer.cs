@@ -78,7 +78,7 @@
             this.panel1.Location = new System.Drawing.Point(-1, 147);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 305);
-            this.panel1.TabIndex = 7;
+            this.panel1.TabIndex = 0;
             // 
             // btn_QuenMatKhau
             // 
@@ -87,7 +87,7 @@
             this.btn_QuenMatKhau.Location = new System.Drawing.Point(280, 198);
             this.btn_QuenMatKhau.Name = "btn_QuenMatKhau";
             this.btn_QuenMatKhau.Size = new System.Drawing.Size(214, 56);
-            this.btn_QuenMatKhau.TabIndex = 8;
+            this.btn_QuenMatKhau.TabIndex = 4;
             this.btn_QuenMatKhau.Text = "Quên Mật Khẩu";
             this.btn_QuenMatKhau.UseVisualStyleBackColor = false;
             this.btn_QuenMatKhau.Click += new System.EventHandler(this.btn_QuenMatKhau_Click);
@@ -99,7 +99,7 @@
             this.btn_Thoat.Location = new System.Drawing.Point(542, 198);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(191, 56);
-            this.btn_Thoat.TabIndex = 7;
+            this.btn_Thoat.TabIndex = 5;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = false;
             this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
@@ -113,7 +113,7 @@
             this.ckHienThiMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.ckHienThiMatKhau.Name = "ckHienThiMatKhau";
             this.ckHienThiMatKhau.Size = new System.Drawing.Size(169, 26);
-            this.ckHienThiMatKhau.TabIndex = 6;
+            this.ckHienThiMatKhau.TabIndex = 2;
             this.ckHienThiMatKhau.Text = "Hiển thị mật khẩu";
             this.ckHienThiMatKhau.UseVisualStyleBackColor = true;
             this.ckHienThiMatKhau.CheckedChanged += new System.EventHandler(this.ckHienThiMatKhau_CheckedChanged);
@@ -125,7 +125,7 @@
             this.btn_DangNhap.Location = new System.Drawing.Point(39, 198);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(155, 56);
-            this.btn_DangNhap.TabIndex = 5;
+            this.btn_DangNhap.TabIndex = 3;
             this.btn_DangNhap.Text = "Đăng Nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
             this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
@@ -137,7 +137,7 @@
             this.txt_TaiKhoan.Multiline = true;
             this.txt_TaiKhoan.Name = "txt_TaiKhoan";
             this.txt_TaiKhoan.Size = new System.Drawing.Size(352, 36);
-            this.txt_TaiKhoan.TabIndex = 4;
+            this.txt_TaiKhoan.TabIndex = 0;
             // 
             // label2
             // 

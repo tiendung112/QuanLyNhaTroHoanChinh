@@ -268,14 +268,14 @@
             this.txtTimkiemNV.Location = new System.Drawing.Point(148, 41);
             this.txtTimkiemNV.Name = "txtTimkiemNV";
             this.txtTimkiemNV.Size = new System.Drawing.Size(196, 30);
-            this.txtTimkiemNV.TabIndex = 6;
+            this.txtTimkiemNV.TabIndex = 0;
             // 
             // btn_ChitietNV
             // 
             this.btn_ChitietNV.Location = new System.Drawing.Point(658, 31);
             this.btn_ChitietNV.Name = "btn_ChitietNV";
             this.btn_ChitietNV.Size = new System.Drawing.Size(247, 45);
-            this.btn_ChitietNV.TabIndex = 5;
+            this.btn_ChitietNV.TabIndex = 2;
             this.btn_ChitietNV.Text = "Xem Chi Tiết";
             this.btn_ChitietNV.UseVisualStyleBackColor = true;
             this.btn_ChitietNV.Click += new System.EventHandler(this.btn_ChitietNV_Click);
@@ -285,7 +285,7 @@
             this.btnhienThiNV.Location = new System.Drawing.Point(388, 37);
             this.btnhienThiNV.Name = "btnhienThiNV";
             this.btnhienThiNV.Size = new System.Drawing.Size(131, 33);
-            this.btnhienThiNV.TabIndex = 4;
+            this.btnhienThiNV.TabIndex = 1;
             this.btnhienThiNV.Text = "Hiển Thị";
             this.btnhienThiNV.UseVisualStyleBackColor = true;
             this.btnhienThiNV.Click += new System.EventHandler(this.btnhienThiNV_Click);
@@ -364,7 +364,7 @@
             this.btn_ChiTietKH.Location = new System.Drawing.Point(779, 42);
             this.btn_ChiTietKH.Name = "btn_ChiTietKH";
             this.btn_ChiTietKH.Size = new System.Drawing.Size(158, 52);
-            this.btn_ChiTietKH.TabIndex = 3;
+            this.btn_ChiTietKH.TabIndex = 2;
             this.btn_ChiTietKH.Text = "Chi Tiết";
             this.btn_ChiTietKH.UseVisualStyleBackColor = true;
             this.btn_ChiTietKH.Click += new System.EventHandler(this.btn_ChiTietKH_Click);
@@ -374,7 +374,7 @@
             this.btn_hienThiKhachhang.Location = new System.Drawing.Point(494, 42);
             this.btn_hienThiKhachhang.Name = "btn_hienThiKhachhang";
             this.btn_hienThiKhachhang.Size = new System.Drawing.Size(158, 52);
-            this.btn_hienThiKhachhang.TabIndex = 2;
+            this.btn_hienThiKhachhang.TabIndex = 1;
             this.btn_hienThiKhachhang.Text = "Hiển Thị";
             this.btn_hienThiKhachhang.UseVisualStyleBackColor = true;
             this.btn_hienThiKhachhang.Click += new System.EventHandler(this.btn_hienThiKhachhang_Click);
@@ -532,7 +532,7 @@
             this.button2.Location = new System.Drawing.Point(609, 52);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 46);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Gửi Mail";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -543,7 +543,7 @@
             this.cbx_nam.Location = new System.Drawing.Point(133, 91);
             this.cbx_nam.Name = "cbx_nam";
             this.cbx_nam.Size = new System.Drawing.Size(203, 30);
-            this.cbx_nam.TabIndex = 5;
+            this.cbx_nam.TabIndex = 1;
             this.cbx_nam.Click += new System.EventHandler(this.cbx_nam_Click);
             // 
             // label4
@@ -560,7 +560,7 @@
             this.btn_chiTietHoaDon.Location = new System.Drawing.Point(796, 38);
             this.btn_chiTietHoaDon.Name = "btn_chiTietHoaDon";
             this.btn_chiTietHoaDon.Size = new System.Drawing.Size(199, 46);
-            this.btn_chiTietHoaDon.TabIndex = 3;
+            this.btn_chiTietHoaDon.TabIndex = 4;
             this.btn_chiTietHoaDon.Text = "Chi Tiết Hoá Đơn";
             this.btn_chiTietHoaDon.UseVisualStyleBackColor = true;
             this.btn_chiTietHoaDon.Click += new System.EventHandler(this.btn_chiTietHoaDon_Click);
@@ -627,7 +627,7 @@
             this.button1.Location = new System.Drawing.Point(745, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 41);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Chi Tiết";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -637,7 +637,7 @@
             this.btn_HopDongHienThi.Location = new System.Drawing.Point(276, 29);
             this.btn_HopDongHienThi.Name = "btn_HopDongHienThi";
             this.btn_HopDongHienThi.Size = new System.Drawing.Size(135, 41);
-            this.btn_HopDongHienThi.TabIndex = 4;
+            this.btn_HopDongHienThi.TabIndex = 1;
             this.btn_HopDongHienThi.Text = "Hiển Thị";
             this.btn_HopDongHienThi.UseVisualStyleBackColor = true;
             this.btn_HopDongHienThi.Click += new System.EventHandler(this.btn_HopDongHienThi_Click);
@@ -648,7 +648,7 @@
             this.cbx_HopDong.Location = new System.Drawing.Point(29, 35);
             this.cbx_HopDong.Name = "cbx_HopDong";
             this.cbx_HopDong.Size = new System.Drawing.Size(221, 30);
-            this.cbx_HopDong.TabIndex = 3;
+            this.cbx_HopDong.TabIndex = 0;
             // 
             // dgv_HopDong
             // 
@@ -671,7 +671,7 @@
             this.dgv_HopDong.RowTemplate.Height = 28;
             this.dgv_HopDong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_HopDong.Size = new System.Drawing.Size(1040, 472);
-            this.dgv_HopDong.TabIndex = 0;
+            this.dgv_HopDong.TabIndex = 1;
             this.dgv_HopDong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_HopDong_CellClick);
             // 
             // soHopDongDataGridViewTextBoxColumn
@@ -767,7 +767,7 @@
             this.btn_hienThi.Location = new System.Drawing.Point(430, 59);
             this.btn_hienThi.Name = "btn_hienThi";
             this.btn_hienThi.Size = new System.Drawing.Size(131, 33);
-            this.btn_hienThi.TabIndex = 3;
+            this.btn_hienThi.TabIndex = 2;
             this.btn_hienThi.Text = "Hiển Thị";
             this.btn_hienThi.UseVisualStyleBackColor = true;
             this.btn_hienThi.Click += new System.EventHandler(this.btn_hienThi_Click);
@@ -777,7 +777,7 @@
             this.btn_CTPhong.Location = new System.Drawing.Point(738, 54);
             this.btn_CTPhong.Name = "btn_CTPhong";
             this.btn_CTPhong.Size = new System.Drawing.Size(247, 45);
-            this.btn_CTPhong.TabIndex = 0;
+            this.btn_CTPhong.TabIndex = 3;
             this.btn_CTPhong.Text = "Xem Chi Tiết";
             this.btn_CTPhong.UseVisualStyleBackColor = true;
             this.btn_CTPhong.Click += new System.EventHandler(this.btn_CTPhong_Click);
@@ -788,7 +788,7 @@
             this.label1.Location = new System.Drawing.Point(58, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 22);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 4;
             this.label1.Text = "Vị Trí Phòng";
             // 
             // cbx_phong
@@ -806,7 +806,7 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 116);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1047, 534);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
             // 
@@ -882,7 +882,7 @@
             this.tb_Phong.Padding = new System.Drawing.Point(10, 5);
             this.tb_Phong.SelectedIndex = 0;
             this.tb_Phong.Size = new System.Drawing.Size(1061, 673);
-            this.tb_Phong.TabIndex = 1;
+            this.tb_Phong.TabIndex = 0;
             // 
             // hoaDonTableAdapter
             // 
@@ -930,7 +930,7 @@
             this.btn_ThongTin.Location = new System.Drawing.Point(1151, 12);
             this.btn_ThongTin.Name = "btn_ThongTin";
             this.btn_ThongTin.Size = new System.Drawing.Size(98, 138);
-            this.btn_ThongTin.TabIndex = 2;
+            this.btn_ThongTin.TabIndex = 1;
             this.btn_ThongTin.Text = "Thông Tin Bản thân";
             this.btn_ThongTin.UseVisualStyleBackColor = true;
             this.btn_ThongTin.Click += new System.EventHandler(this.btn_ThongTin_Click);
